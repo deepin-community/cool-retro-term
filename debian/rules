@@ -1,4 +1,24 @@
 #!/usr/bin/make -f
+#export DH_VERBOSE = 1
+
+# see FEATURE AREAS in dpkg-buildflags(1)
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+# see ENVIRONMENT in dpkg-buildflags(1)
+# package maintainers to append CFLAGS
+#export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+# package maintainers to append LDFLAGS
+#export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+
+export QT_SELECT=qt5
+
+override_dh_auto_configure:
+	ln -s /usr/share/fonts/truetype/3270/3270-Regular.ttf app/qml/fonts/1971-ibm-3278/3270-Regular.ttf
+	dh_auto_configure
+
+override_dh_missing:
+	@echo BROKEN.
 
 %:
-	dh $@
+	@echo ${QT_SELECT}
+	dh $@ --no-parallel

@@ -1,0 +1,8 @@
+repackaged to include qmltermwidget
+
+dropped these fonts
+app/qml/fonts/1977-commodore-pet: not for sale.
+app/qml/fonts/1977-apple2: not for sale.
+app/qml/fonts/1979-atari-400-800: not for sale.
+app/qml/fonts/1982-commodore64: not for sale.
+app/qml/fonts/1985-ibm-pc-vga: CC-MY-HEADACHE.
