@@ -1,0 +1,7 @@
+*.desktop usr/share/applications
+cool-retro-term usr/bin
+#debian/tmp/usr/lib/* usr/lib
+debian/tmp/usr/share/icons/hicolor/256x256/apps/cool-retro-term.png usr/share/icons/hicolor/256x256/apps
+debian/tmp/usr/share/icons/hicolor/128x128/apps/cool-retro-term.png usr/share/icons/hicolor/128x128/apps
+debian/tmp/usr/share/icons/hicolor/64x64/apps/cool-retro-term.png usr/share/icons/hicolor/64x64/apps
+debian/tmp/usr/share/icons/hicolor/32x32/apps/cool-retro-term.png usr/share/icons/hicolor/32x32/apps

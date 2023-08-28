@@ -1,15 +1,62 @@
-Source: template-repository
-Section: unknown
+Source: cool-retro-term
+Section: x11
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Gürkan Myczko <tar@debian.org>
+Standards-Version: 4.6.1
+Rules-Requires-Root: no
+Build-Depends: debhelper-compat (= 13), qmlscene,
+ qt5-qmake, qtdeclarative5-dev, qml-module-qtquick-controls,
+ qml-module-qtgraphicaleffects, qml-module-qtquick-dialogs,
+ qml-module-qtquick-localstorage, qml-module-qtquick-window2,
+ qtchooser, qtquickcontrols2-5-dev,
+ fonts-inconsolata, fonts-3270, qml-module-termwidget, fonts-agave,
+ fonts-sixtyfour, fonts-pc, fonts-pc-extra, fonts-amiga, fonts-atarismall
+Vcs-Browser: https://salsa.debian.org/tar/cool-retro-term
+Vcs-Git: https://salsa.debian.org/tar/cool-retro-term.git
+Homepage: https://github.com/Swordfish90/cool-retro-term
 
-Package: template-repository
+Package: cool-retro-term
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Provides: x-terminal-emulator
+Depends: qml-module-qtquick-controls, qml-module-qtgraphicaleffects,
+ qml-module-qtquick-dialogs, qml-module-qtquick-localstorage,
+ qml-module-qtquick-window2, ${shlibs:Depends}, ${misc:Depends},
+ qml-module-qt-labs-settings, qml-module-qt-labs-folderlistmodel,
+ fonts-inconsolata, fonts-3270, qml-module-termwidget, fonts-agave,
+ fonts-sixtyfour, fonts-pc, fonts-pc-extra, fonts-amiga, fonts-atarismall,
+ qml-module-qt-labs-platform, qml-module-qtquick-controls2
+Description: terminal emulator which mimics old screens
+ This is a terminal emulator which mimics the look and feel
+ of the old cathode tube screens. It has been designed to be eye-candy,
+ customizable, and reasonably lightweight.
+
+Package: fonts-hermit
+Architecture: any
+Multi-Arch: foreign
+Section: fonts
+Depends: ${misc:Depends}
+Description: Monospace Hermit Font for programming
+ This is a monospace font designed to be clear, pragmatic and very readable.
+ Its creation has been focused on programming. Every glyph was carefully
+ planned and calculated, according to defined principles and rules. For this
+ reason, Hermit is coherent and regular.
+
+Package: fonts-terminus
+Architecture: any
+Multi-Arch: foreign
+Section: fonts
+Depends: ${misc:Depends}
+Description: Terminus monospace font
+ This is a fixed-width vector font called Terminus. It is suitable for
+ terminals, editors, etc. If you have to work for extended time in front of
+ monitor (i.e. over eight hours), you may find that using this font reduces
+ your eyes-fatigue.
+
+Package: fonts-proggy
+Architecture: any
+Multi-Arch: foreign
+Section: fonts
+Depends: ${misc:Depends}
+Description: Monospaced bitmap programming font
+ These are a set of fixed-width screen fonts that are designed for code
+ listings. This is only the tiny version of the font collection.

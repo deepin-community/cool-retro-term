@@ -1,5 +1,104 @@
-template-repository (1.0-1) unstable; urgency=medium
+cool-retro-term (1.2.0+ds2-1) unstable; urgency=medium
 
-  * Initial release
+  * d/control:
+    - drop binary pkg qml-module-qmltermwidget. (Closes: #1022953)
+    - update dependencies to qml-module-termwidget.
+  * d/qml-module-qmltermwidget.install: removed.
+  * Bump standards version to 4.6.1.
+  * d/copyright: drop qmltermwidget parts.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Gürkan Myczko <tar@debian.org>  Mon, 14 Nov 2022 09:27:48 +0100
+
+cool-retro-term (1.2.0+ds-7) unstable; urgency=medium
+
+  * Really apply the patch.
+
+ -- Gürkan Myczko <tar@debian.org>  Sun, 21 Aug 2022 11:51:22 +0200
+
+cool-retro-term (1.2.0+ds-6) unstable; urgency=medium
+
+  * Apply patch to fix FTBFS. Thanks Reiner Herrmann. (Closes: #1015126)
+
+ -- Gürkan Myczko <tar@debian.org>  Sat, 20 Aug 2022 16:21:47 +0200
+
+cool-retro-term (1.2.0+ds-5) unstable; urgency=medium
+
+  * d/watch: add file mangle. (Closes: #991986)
+  * d/control: add depends: qml-module-qtquick-controls2.
+    (Closes: LP: #1966553)
+
+ -- Gürkan Myczko <tar@debian.org>  Thu, 31 Mar 2022 17:04:54 +0200
+
+cool-retro-term (1.2.0+ds-4) unstable; urgency=medium
+
+  * d/control: add Depends: qml-module-qt-labs-platform.
+
+ -- Gürkan Myczko <tar@debian.org>  Tue, 22 Feb 2022 13:06:24 +0100
+
+cool-retro-term (1.2.0+ds-3) unstable; urgency=medium
+
+  * d/control: update Vcs fields.
+  * Upload to unstable.
+  * d/patches: dropped.
+
+ -- Gürkan Myczko <tar@debian.org>  Fri, 04 Feb 2022 12:42:11 +0100
+
+cool-retro-term (1.2.0+ds-2) experimental; urgency=medium
+
+  * Add missing build-depends: qtquickcontrols2-5-dev, and
+    the substituted fonts.
+  * Drop Axel Beckert <abe@debian.org> from Uploaders as requested.
+
+ -- Gürkan Myczko <tar@debian.org>  Tue, 01 Feb 2022 15:17:14 +0100
+
+cool-retro-term (1.2.0+ds-1) experimental; urgency=medium
+
+  * New upstream version. (Closes: #991988)
+  * d/copyright:
+    - add missing qmltermwidget part (Closes: #991985)
+    - update years.
+  * Update maintainer address.
+  * Bump standards version to 4.6.0.
+
+ -- Gürkan Myczko <tar@debian.org>  Tue, 01 Feb 2022 14:25:42 +0100
+
+cool-retro-term (1.1.1+git20200723-2.1) unstable; urgency=medium
+
+  * Remove x-terminal-emulator alternative on package removal.
+    (Closes: #983889)
+
+ -- Andreas Beckmann <anbe@debian.org>  Tue, 18 May 2021 18:50:41 +0200
+
+cool-retro-term (1.1.1+git20200723-2) unstable; urgency=medium
+
+  * d/rules: disable parallel building. (Closes: #973080)
+
+ -- Gürkan Myczko <gurkan@phys.ethz.ch>  Thu, 12 Nov 2020 13:35:29 +0100
+
+cool-retro-term (1.1.1+git20200723-1) unstable; urgency=medium
+
+  * New upstream version. (Closes: #957100)
+  * Bump standards version to 4.5.0.
+  * d/control:
+    - Add Vcs fields.
+    - Add Provides: x-terminal-emulator.
+    - Add to Depends: fonts-pc.
+    - Add Rules-Requires-Root field.
+  * Bump debhelper version to 13, drop d/compat.
+  * d/upstream/metadata: added.
+  * d/copyright: Updated copyright year.
+  * d/rules: override dh_missing borks on desktop file.
+
+ -- Gürkan Myczko <gurkan@phys.ethz.ch>  Thu, 23 Jul 2020 17:21:57 +0200
+
+cool-retro-term (1.1.1-2) unstable; urgency=medium
+
+  * Source only upload for testing migration.
+
+ -- Gürkan Myczko <gurkan@phys.ethz.ch>  Mon, 27 Jan 2020 09:14:37 +0100
+
+cool-retro-term (1.1.1-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #758238, #785370)
+
+ -- Gürkan Myczko <gurkan@phys.ethz.ch>  Tue, 14 Jan 2020 08:37:02 +0100

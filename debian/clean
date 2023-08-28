@@ -1,0 +1,16 @@
+Makefile
+CMakeCache.txt
+CPackConfig.cmake
+CPackSourceConfig.cmake
+cmake_install.cmake
+cmake_uninstall.cmake
+qtermwidget5-config.cmake
+qtermwidget5.pc
+qmltermwidget/QMLTermWidget/
+qmltermwidget/Makefile
+qmltermwidget/.qmake.stash
+.qmake.stash
+qmltermwidget/*.o
+qmltermwidget/moc*.cpp
+app/Makefile
+app/qml/fonts/1971-ibm-3278/3270-Regular.ttf
